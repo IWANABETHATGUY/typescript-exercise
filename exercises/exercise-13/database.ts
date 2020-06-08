@@ -1,8 +1,8 @@
 export class Database<T> {
     protected filename: string;
-    protected fullTextSearchFieldNames: unknown[];
+    protected fullTextSearchFieldNames: string[];
 
-    constructor(filename: string, fullTextSearchFieldNames) {
+    constructor(filename: string, fullTextSearchFieldNames: string[]) {
         this.filename = filename;
         this.fullTextSearchFieldNames = fullTextSearchFieldNames;
     }
